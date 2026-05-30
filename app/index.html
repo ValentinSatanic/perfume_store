@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scent Vault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <a class="logo-wrap" href="index.html"><span class="logo-top">Scent Vault</span><span class="logo-bottom">Scent Vault</span></a>
+  <div class="header-icons">
+    <button onclick="openSearch()" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <button onclick="openMenu()" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+
+<!-- CAROUSEL -->
+<section class="carousel-section">
+  <div class="carousel-track">
+    <div class="carousel-item left"
+         data-img="img/versace.png"
+         data-img-txt="img/versaceTXT.png"
+         data-theme="#1E2E36,#488185">
+      <img src="img/versace.png" alt="Versace Eros" />
+    </div>
+    <div class="carousel-item center"
+         data-img="img/chanel.png"
+         data-img-txt="img/chanelTXT.png"
+           data-theme="#0E0E17,#212635">
+      <img src="img/chanelTXT.png" alt="Bleu de Chanel" />
+    </div>
+    <div class="carousel-item right"
+         data-img="img/acqua.png"
+         data-img-txt="img/acquaTXT.png"
+          data-theme="#7A7874,#E1E1E1">
+      <img src="img/acqua.png" alt="Acqua di Gio" />
+    </div>
+  </div>
+
+  <button class="carousel-btn prev">&#8249;</button>
+  <button class="carousel-btn next">&#8250;</button>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <h2>We created Scent Vault for those who value freedom of choice and impeccable quality.</h2>
+  <p>Our concept is to introduce legendary niche fragrances through careful and sterile decanting. We've removed the barrier between you and haute perfumery, leaving only the pure delight of discovering new notes. 100% originality, premium aesthetics, and your perfect trail in every atomizer.</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-grid">
+  <a class="product-card" href="product.html">
+    <div class="product-card-img">
+      <img src="img/abyssal.png" alt="Abyssal Tide" />
+    </div>
+    <div class="product-card-info">
+      <h3>Abyssal Tide</h3>
+      <p>5 ml — 25 $<br>10 ml — 35 $</p>
+    </div>
+  </a>
+
+  <a class="product-card" href="product.html">
+    <div class="product-card-img">
+      <img src="img/cerulean.png" alt="Cerulean Veil" />
+    </div>
+    <div class="product-card-info">
+      <h3>Cerulean Veil</h3>
+      <p>5 ml — 25 $<br>10 ml — 35 $</p>
+    </div>
+  </a>
+
+  <a class="product-card" href="product.html">
+    <div class="product-card-img">
+      <img src="img/glacial.png" alt="Glacial Mist" />
+    </div>
+    <div class="product-card-info">
+      <h3>Glacial Mist</h3>
+      <p>5 ml — 25 $<br>10 ml — 35 $</p>
+    </div>
+  </a>
+
+  <a class="product-card" href="product.html">
+    <div class="product-card-img">
+      <img src="img/azure.png" alt="Azure Reflection" />
+    </div>
+    <div class="product-card-info">
+      <h3>Azure Reflection</h3>
+      <p>5 ml — 25 $<br>10 ml — 35 $</p>
+    </div>
+  </a>
+</section>
+
+<!-- MENU OVERLAY -->
+<div id="menuOverlay" class="menu-overlay">
+  <button class="menu-close" onclick="closeMenu()">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="product.html" onclick="closeMenu()">Catalogue</a>
+  <a href="cart.html" onclick="closeMenu()">Cart</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="search-overlay">
+  <button class="search-close" onclick="closeSearch()">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <input id="searchInput" type="text" placeholder="Search fragrances…" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

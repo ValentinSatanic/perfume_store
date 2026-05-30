@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scent Vault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Scent Vault</a>
+  <div class="header-icons">
+    <button onclick="openSearch()" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <button onclick="openMenu()" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- MENU OVERLAY -->
+<div id="menuOverlay" class="menu-overlay">
+  <button class="menu-close" onclick="closeMenu()">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="product.html" onclick="closeMenu()">Catalogue</a>
+  <a href="cart.html" onclick="closeMenu()">Cart</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="search-overlay">
+  <button class="search-close" onclick="closeSearch()">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <input id="searchInput" type="text" placeholder="Search fragrances…" />
+</div>
